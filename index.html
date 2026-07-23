@@ -2,14 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart School Management System</title>
+    <meta name="description" content="Smart School Management Portal with AI Study Assistant, Fees, Attendance, Timetable & Marksheets" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-blue-500 selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <div style="display: flex; height: 100vh; width: 100vw; align-items: center; justify-content: center; background-color: #f1f5f9; font-family: sans-serif; color: #475569;">
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border: 4px solid #cbd5e1; border-top-color: #2563eb; border-radius: 50%; margin: 0 auto 16px; animation: spin 1s linear infinite;"></div>
+          <h2 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px;">Smart School Management System</h2>
+          <p style="font-size: 13px; margin: 0; color: #64748b;">Loading Application Modules...</p>
+        </div>
+      </div>
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
