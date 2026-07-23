@@ -40,7 +40,13 @@ const KEYS = {
 function getLocal<T>(key: string, defaultData: T): T {
   try {
     const data = localStorage.getItem(key);
-    return data ? JSON.parse(data) : defaultData;
+    if (!data) return defaultData;
+    const parsed = JSON.parse(data);
+    if (parsed === null || parsed === undefined) return defaultData;
+    if (Array.isArray(defaultData) && !Array.isArray(parsed)) {
+      return defaultData;
+    }
+    return parsed;
   } catch (e) {
     console.error(`Error reading ${key} from storage`, e);
     return defaultData;
