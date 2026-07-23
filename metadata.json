@@ -1,0 +1,6 @@
+{
+  "name": "Smart School Management System",
+  "description": "Comprehensive School Management System with AI Study Assistant, Multi-role Access (Admin, Teacher, Student, Parent), Attendance, Fees, Exams, Assignments, and Timetable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
